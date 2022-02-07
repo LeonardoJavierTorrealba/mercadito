@@ -64,6 +64,9 @@ header div.topHeader p{
     width: 100%;
     text-align: center;
     margin-top: 10px;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 nav{
     display:none; 
@@ -75,6 +78,11 @@ nav{
     flex-wrap: wrap; 
     padding: 5%;
     align-items: center;
+}
+
+p.cuotas{
+    color: #000
+
 }
 
 .burger-menu{
@@ -181,18 +189,57 @@ p.discount{
 
 footer article{
     text-align: center;
+    
 }
 .icoFooter i{
     font-size: 2em;
-    color: #1259c3;    
+    color: #1259c3;
+    margin: 10px; 
 }
+
+
 
 
 
 @media(min-width: 361px){
     nav{
-        display:block;
+        display:flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content:flex-end;
     }
+
+    
+    header div.logo{
+    width: 30%;
+    padding: 10px;
+    }
+
+    header div.logo img{
+    width: 100%;
+    
+    }
+
+   
+    nav ul.navSitio{
+        display:flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 10px; 
+    }
+
+    nav ul.navUser{
+        display:flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin: 10px; 
+    }
+
+
+    nav ul li{
+        margin: 5px;
+    }
+
 
     main article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -217,6 +264,26 @@ footer article{
         display:none; 
     }
 
+    div.form{
+        width: 40%;
+    }
+
+    div.topHeader{
+        display: flex;
+        margin: 10px;
+    }
+    
+    p.cuotas{
+        width: 30%;
+    }
+
+    header div.topHeader p {
+        width: 30%;
+        
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
 
 
 
@@ -226,11 +293,7 @@ footer article{
 
 
 @media(min-width: 769px){
-    nav{
-        display:block;
-    }
-
-    main article{
+     main article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
      }
 
@@ -252,6 +315,24 @@ footer article{
         display:none; 
     }
 
+    nav ul.navSitio{
+        display:flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 10px; 
+    }
+
+    nav ul.navUser{
+        display:flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin: 10px; 
+    }
+
+
+    nav ul li{
+        margin: 5px;
+    }
     
 
 }
