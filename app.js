@@ -12,3 +12,8 @@ app.get("/", (req, res) => {
     let patheoGet = path.resolve(__dirname, "./views/home.html");
     res.sendFile(patheoGet);
 })
+
+app.get("/register.html", (req, res) => {
+    let patheoGet = path.resolve(__dirname, "./views/register.html");
+    res.sendFile(patheoGet);
+})

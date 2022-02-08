@@ -198,6 +198,42 @@ footer article{
 }
 
 
+/*REGISTER RULES*/
+
+form{
+    background-color:#ebebeb;
+    margin: 5%; 
+    color: #000;
+    
+}
+
+form div{
+    margin: 2%;
+    padding: 2%;
+
+}
+
+
+form input{
+    border: none;
+    border-radius: 3px; 
+}
+
+form div.cateInteres{
+
+    display:flex;
+    flex-direction: column;
+}
+
+form button{
+    padding: 4px; 
+    margin: 10px; 
+}
+
+
+
+
+
 
 
 
@@ -333,7 +369,7 @@ footer article{
     nav ul li{
         margin: 5px;
     }
-    
+   
 
 }
 
