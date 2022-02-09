@@ -81,7 +81,7 @@ nav{
 }
 
 p.cuotas{
-    color: #000
+    color: #000;
 
 }
 
@@ -141,6 +141,11 @@ article{
     margin: 10px; 
 }
 
+
+main article.artProducto:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+ }
+
 main section article i{
     color: #39b54a;
     border-radius: 100%;
@@ -152,6 +157,11 @@ main section article i{
     position:absolute;
     right: 20px;
     top: -15px;
+}
+
+main article i:hover{
+    transition-duration: 1s;
+    transform: rotate(-90deg)
 }
 
 .producto{
@@ -174,6 +184,7 @@ p.discount{
 .description{
     font-size: 16px;
     display:none;
+
 }
 .main-article{
     border-top: 1px solid #ebebeb;
@@ -277,9 +288,7 @@ form button{
     }
 
 
-    main article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-     }
+    
 
     div.producto{
         display:flex; 
@@ -292,9 +301,14 @@ form button{
     }
 
     .description{
-        font-size: 16px;
+        font-size: 16px;        
+    }
+
+    article.artProducto:hover h4{
         display:block;
     }
+
+
 
     .burger-menu{
         display:none; 
@@ -329,14 +343,14 @@ form button{
 
 
 @media(min-width: 769px){
-     main article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-     }
+  
 
      div.producto{
         display:flex; 
         flex-wrap: wrap;
         justify-content: space-around;
+
+        
     }
 
     main section article{
@@ -345,8 +359,13 @@ form button{
 
     .description{
         font-size: 16px;
+        
+    }
+
+    article.artProducto:hover h4{
         display:block;
     }
+
     .burger-menu{
         display:none; 
     }
