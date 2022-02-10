@@ -146,6 +146,10 @@ main article.artProducto:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
  }
 
+ article.artProducto:hover h4{
+    visibility:visible;
+}
+
 main section article i{
     color: #39b54a;
     border-radius: 100%;
@@ -159,7 +163,7 @@ main section article i{
     top: -15px;
 }
 
-main article i:hover{
+main article.artProducto:hover i{
     transition-duration: 1s;
     transform: rotate(-90deg)
 }
@@ -183,7 +187,7 @@ p.discount{
 }
 .description{
     font-size: 16px;
-    display:none;
+    visibility: hidden;
 
 }
 .main-article{
@@ -207,6 +211,15 @@ footer article{
     color: #1259c3;
     margin: 10px; 
 }
+
+.icoFooter i:hover {
+color: #03264C;
+}
+
+footer p{
+    margin: 10px;
+}
+
 
 
 /*REGISTER RULES*/
@@ -239,6 +252,37 @@ form div.cateInteres{
 form button{
     padding: 4px; 
     margin: 10px; 
+}
+
+/*---REGLAS LOGIN----*/
+.txtLog{
+    border:none;
+    border-radius: 3px;
+    width: 90%;
+    margin: 3%;
+    height: 5%;
+    
+}
+
+.btnLog{
+    background-color: #0022AA;
+    border: none;
+    border-radius: 3px; 
+    color: white;
+    width: 60%;
+}
+
+
+.btnLog:hover{
+    background-color: #90a4f3;
+    color: black;
+}
+
+.formLog{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
 }
 
 
@@ -305,7 +349,7 @@ form button{
     }
 
     article.artProducto:hover h4{
-        display:block;
+        visibility:visible;
     }
 
 
@@ -335,6 +379,11 @@ form button{
         flex-wrap: nowrap;
     }
 
+    section.caracFooter{
+        display:flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
 
 
 }
@@ -387,6 +436,12 @@ form button{
 
     nav ul li{
         margin: 5px;
+    }
+
+    section.caracFooter{
+        display:flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
     }
    
 
