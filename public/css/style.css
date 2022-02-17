@@ -113,7 +113,7 @@ section{
 /*------REGLAS DEL MAIN-----*/
 
 main{
-    
+  
     width: 90%;
     margin: 0 auto;
 }
@@ -252,6 +252,21 @@ form div.cateInteres{
 form button{
     padding: 4px; 
     margin: 10px; 
+}
+
+.btnForm{
+    background-color: #0022AA;
+    border: none;
+    border-radius: 3px; 
+    color: white;
+    width: 30%;
+
+}
+
+div.buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 /*---REGLAS LOGIN----*/
