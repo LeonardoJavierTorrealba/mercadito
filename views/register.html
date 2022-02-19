@@ -58,67 +58,77 @@ rel="stylesheet" />
 <form action="/" method="get">
    
 <div>
-<input type="text" id="nombreape" name="nombreape" placeholder="Nombre y Apellido ">
+<label class="labRegister" for="nombreape">Nombre y Apellido</label>
+<input type="text" id="nombreape" name="nombreape" placeholder="Escriba acá">
 </div>
 
 <div>
-<input type="text" name="userName" id="userName" placeholder="Nombre de usuario">
+<label class="labRegister" for="userName">Nombre de Usuario</label>
+<input type="text" name="userName" id="userName" placeholder="Escriba acá">
 </div>
 
 <div>
-<h4 for="fechanac">Fecha de nacimiento</h4>
+<label class="labRegister"for="fechanac">Fecha de Nacimiento</label>
 <input type="date" name="fechaNac" id="fechaNac">
 </div>
 
 <div>
+<label class="labRegister"for="adress">Domicilio</label>
 <input type="text" id="adress" name="adress" placeholder="Domicilio">
 </div>
 
 <div>
-<h4>Perfil de usuario</h4>
-<input type="radio" name="perfilUsuario" id="comprador"> 
-<label for="comprador">Comprador</label>
-
-<input type="radio" name="perfilUsuario" id="vendedor">
-<label for="vendedor">Vendedor</label>
-
-
-<div class="cateInteres">
-<h4>Categorías de Interés</h4>
-<div>
-<input type="checkbox" name="catInteres" id="electro">
-<label for="electro">Electro</label>
-</div>
-
-<div>
-<input type="checkbox" name="catInteres" id="moda">
-<label for="moda">Moda</label>
-</div>
-
-<div>
-<input type="checkbox" name="catInteres" id="jugueteria">
-<label for="jugueteria">Jugueteria</label>
-</div>
-
-<div>
-<input type="checkbox" name="catInteres" id="vidaSana">
-<label for="vidaSana">Vida Sana</label>
-</div>
-
+<label class="labRegister">Perfil de usuario</label>
+<div class="compraVende">
+<input type="radio" name="perfilUsuario" id="comprador" class="compVen"> 
+<label for="comprador" class="labOption">Comprador</label>
 </div>
 
 
+<div class="compraVende">
+<input type="radio" name="perfilUsuario" id="vendedor" class="compVen">
+<label for="vendedor" class="labOption">Vendedor</label>
+</div>
+</div>
+
 <div>
-<label for="fotoPerfil">Foto de Perfil: </label>
+<label class="labRegister">Categorías de Interés</label>
+<div class="compraVende">
+<input type="checkbox" name="catInteres" id="electro" class="compVen">
+<label for="electro" class="labOption">Electro</label>
+</div>
+
+<div>
+<input type="checkbox" name="catInteres" id="moda" class="compVen">
+<label for="moda" class="labOption">Moda</label>
+</div>
+
+<div>
+<input type="checkbox" name="catInteres" id="jugueteria" class="compVen">
+<label for="jugueteria" class="labOption">Jugueteria</label>
+</div>
+
+<div>
+<input type="checkbox" name="catInteres" id="vidaSana" class="compVen">
+<label for="vidaSana" class="labOption">Vida Sana</label>
+</div>
+
+</div>
+
+
+<div>
+<label for="fotoPerfil" class="labRegister">Foto de Perfil: </label>
 <input type="file" name="fotoPerfil" id="fotoPerfil" accept="image/*">
 </div>
 
 <div>
-<input type="password" name="password1" id="password1" placeholder="Ingrese Contraseña">
+<label for="fotoPerfil" class="labRegister">Ingrese Contraseña </label>
+<input type="password" name="password1" id="password1" placeholder="Digite acá su contraseña">
 </div>
 
 <div>
-<input type="password" name="password2" id="password2" placeholder="Reingrese Contraseña">
+<label for="fotoPerfil" class="labRegister">Reingrese su Contraseña</label>
+<input type="password" name="password2" id="password2" placeholder="Repita la Contraseña anterior">
 </div>
 
 <div class="buttons">

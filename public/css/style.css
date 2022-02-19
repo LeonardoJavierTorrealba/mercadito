@@ -35,15 +35,6 @@ div.submit{
     width: 5%;
 }
 
-header .form input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-    width: 70%; 
-}
-
 div.form{
     width: 50%;
 }
@@ -229,19 +220,51 @@ form{
     margin: 5%; 
     color: #000;
     
+    
 }
 
 form div{
-    margin: 2%;
-    padding: 2%;
+    padding: 5% 
 
 }
 
-
-form input{
-    border: none;
-    border-radius: 3px; 
+label.labRegister{
+    align-self: flex-start;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-weight: bold;
+    font-size: 110%; 
 }
+
+
+form div input{
+    border:none;
+    border-radius: 5px;
+    width: 80%;
+    margin: 2% 5% 1% 5%;
+    border: solid 1px grey;
+    font-size: 100%;
+    padding: 3%;
+}
+
+input.compVen{
+width: 10%;
+}
+
+div.compraVende{
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div label.labOption{
+    align-self: flex-start;
+    align-self: center;
+       
+}
+
+
+
 
 form div.cateInteres{
 
@@ -269,13 +292,45 @@ div.buttons{
     justify-content: space-around;
 }
 
+
+
+
 /*---REGLAS LOGIN----*/
+
+main.mainLogin{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+form.formLog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 5%;
+    }
+
+label.labelForm{
+    align-self: flex-start;
+    margin-left: 15%;
+    font-weight: bold;
+    font-size: 110%;
+    
+}
+
+
+
 .txtLog{
     border:none;
-    border-radius: 3px;
-    width: 90%;
-    margin: 3%;
-    height: 5%;
+    border-radius: 5px;
+    width: 70%;
+    margin: 2% 5% 10% 5%;
+    border: solid 1px grey;
+    font-size: 100%;
+    padding: 3%;
+
     
 }
 
@@ -293,12 +348,7 @@ div.buttons{
     color: black;
 }
 
-.formLog{
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 100%;
-}
+
 
 
 
