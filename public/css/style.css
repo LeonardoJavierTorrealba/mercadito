@@ -508,6 +508,14 @@ label.labelForm{
         justify-content: space-between;
         margin-bottom: 10px;
     }
+
+    input.txtLog{
+        padding: 2%;
+     }
+
+    form div input{
+         padding: 2%;
+     }
    
 
 }
